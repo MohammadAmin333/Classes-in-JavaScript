@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classer in JavaScript</title>
+</head>
+<body>
+    <p id="Max0"></p>
+    <p id="Max1"></p>
+    <script>
+        // Creating A Class \\
+       class student{
+        constructor(name, year){
+            this.name = name;
+            this.year = year;
+        }
+        //Creating Age Method For Class Student\\
+        age (){
+            let date = new Date();
+            return date.getFullYear() - this.year;
+        }
+       }
+      let Max0 = new student ("Mohammad", 2009)
+       document.getElementById("Max0").innerHTML="My name is:"+ Max0.name+". I Born in"+ Max0.year + ". And my age is " +student.age();
+
+        // another project
+
+
+
+    </script>
+</body>
+</html>
